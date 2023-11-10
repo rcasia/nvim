@@ -1,6 +1,6 @@
 return {
   { "nvim-neotest/neotest-plenary" },
-  { "rcasia/neotest-java" },
+  { "rcasia/neotest-java", dir = "/home/rico/REPOS/neotest-java" },
   {
     "nvim-neotest/neotest",
     opts = {
