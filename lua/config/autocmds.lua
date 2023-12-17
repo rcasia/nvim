@@ -20,4 +20,4 @@ local function autosave()
 end
 
 -- execute
-autosave()
+-- autosave()
