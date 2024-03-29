@@ -10,6 +10,8 @@ local function map(mode, lhs, rhs, opts)
   vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
+vim.keymap.set({ "n", "v" }, "<a-cr>", vim.lsp.buf.code_action, opts)
+
 -- add your keymaps here
 map("n", "zz", "<cmd>ZenMode<cr>")
 
