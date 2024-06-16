@@ -9,6 +9,7 @@ return {
       "antoinemadec/FixCursorHold.nvim",
       "nvim-neotest/neotest-plenary",
       "rcasia/neotest-java",
+      "nvim-neotest/nvim-nio",
     },
     opts = {
       adapters = {
