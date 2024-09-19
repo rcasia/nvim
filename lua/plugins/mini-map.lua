@@ -15,9 +15,14 @@ local minimap = require('mini.map')
 				-- See: `:h MiniMap.gen_integration`
 				-- If enabled, increase (or remove) width setting.
 				integrations = {
-					minimap.gen_integration.diagnostic(),
+					minimap.gen_integration.diagnostic({
+						error = 'DiagnosticFloatingError',
+						warn  = 'DiagnosticFloatingWarn',
+						info  = 'DiagnosticFloatingInfo',
+						hint  = 'DiagnosticFloatingHint',
+					}),
 					minimap.gen_integration.builtin_search(),
-					minimap.gen_integration.gitsigns(),
+					minimap.gen_integration.diff(),
 				},
 				symbols = {
 					scroll_line = '⎕',  -- '⎕', '█', '🮚', '▶'
